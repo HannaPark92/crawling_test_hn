@@ -11,8 +11,8 @@ try:
     chrome_options = webdriver.ChromeOptions()
     # 창 안뜨게 추가
     chrome_options.headless =True
-    driver = webdriver.Chrome('C:/Users/pc/AppData/Local/Programs/Python/chromedriver.exe', options=chrome_options)
-    #driver = webdriver.Chrome('C:/Users/pc/AppData/Local/Programs/Python/chromedriver.exe', chrome_options=chrome_options)
+    driver = webdriver.Chrome('../chromedriver.exe', options=chrome_options)
+    #driver = webdriver.Chrome('../chromedriver.exe', chrome_options=chrome_options)
     # DeprecationWarning: use options instead of chrome_options 경고 떠서 바꿈
     driver.implicitly_wait(3)
     url = 'http://www.naver.com'
